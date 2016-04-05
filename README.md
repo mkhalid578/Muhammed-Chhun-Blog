@@ -4,7 +4,7 @@
 ### Statement
 Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
 
-This project allows users to be able to share thier photos and vidoes in the blog.
+This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can share thier photos and vidoes in the blog.
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
