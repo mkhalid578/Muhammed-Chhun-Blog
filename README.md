@@ -48,7 +48,16 @@ This project will be completely successful when we implement all required functo
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
 
-![alt tag](https://github.com/mkhalid578/FP2/blob/master/output_1.png)
+* The diagram is: 
+![alt tag](https://github.com/oplS16projects/Muhammed-Chhun-Blog/blob/master/fp_diagram.png)
+
+* We have a web server which we will accomplish using #lang web-server/insta 
+* User Interface will be implemented by both Chhun and I (RacketUI)
+* Then create a blog Chhun Kim
+* Share the links using the (net/url) library Muhammed Khalid
+* Upload and include pictures using (2htdp/image) library Muhammed Khalid
+* Upload videos Chhun Kim
+* A Database for storing blog posts (Muhammed Khalid & Chhun Kim)
 
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
 
@@ -85,8 +94,15 @@ In the headings below, replace the silly names and GitHub handles with your actu
 
 ### Muhammed Khalid @mkhalid578 (Team Lead) 
 will write the....
+Function responsible for allowing users to upload pictures
+Function responsible for allowing users to share links
+Construct a graphical user interface
+Work on a database
 
 ### Chhun Kim @chhunkim
 will work on...
-
+Function to allow users to update a blog which they have alread posted
+Function that will allow users to upload and/or embed videos to the blog
+Construct a graphical user interface
+Work on a database
 
