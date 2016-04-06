@@ -48,6 +48,8 @@ This project will be completely successful when we implement all required functo
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
 
+![alt tag](https://github.com/mkhalid578/FP2/blob/master/output_1.png)
+
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
 
 ## Schedule
