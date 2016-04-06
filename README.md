@@ -72,10 +72,10 @@ Here each group member gets a section where they, as an individual, detail what 
 
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
-### Susan Scheme @susanscheme
+### Muhammed Khalid @susanscheme
 will write the....
 
-### Leonard Lambda @lennylambda
+### Chhun Kim @chhunkim
 will work on...
 
 ### Frank Functions @frankiefunk 
