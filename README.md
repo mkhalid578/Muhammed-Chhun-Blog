@@ -72,11 +72,10 @@ Here each group member gets a section where they, as an individual, detail what 
 
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
-### Muhammed Khalid @susanscheme
+### Muhammed Khalid @mkhalid578 (The Leader of the Project) 
 will write the....
 
 ### Chhun Kim @chhunkim
 will work on...
 
-### Frank Functions @frankiefunk 
-Frank is team lead. Additionally, Frank will work on... 
+
