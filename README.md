@@ -5,7 +5,7 @@
 Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
 
 This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other site by copying URL in the box. The blog, photos, and videos posted will be on the webpage. We are currently trying to figure out a way to store 
-the information onto the website, and we are currently trying to figure out a way to store that information using 
+the information onto the website and wrtie them into Database.
 a database.
 
 ### Analysis
