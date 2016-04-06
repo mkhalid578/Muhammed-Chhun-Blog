@@ -3,7 +3,7 @@
 
 ### Statement
 
-This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other sites by copying URL of the site. All blogs, photos, and videos posted will be stored on a database provided we have enough time. Personally, we think that this project is interesting because we could post daily activities as a dairy, and we think that a social media is not supposed to be just personal information and having friends added each other like Facebook or Instragram. However, a post could be from an anonymous person about a story as a general knowlegde or some activities that we barely see on the daily news, so others can hear about it. We hope from this project we could learn more not only just learning scheme, but also how to use different libraries already within the scheme language. Morever, we hope to create something for public uses as well. 
+This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other sites by copying URL of the site. All blogs, photos, and videos posted will be stored on a database provided if we have enough time. Personally, we think that this project is interesting because we could post daily activities as a dairy, and we think that a social media is not supposed to be just personal information and having friends added each other like Facebook or Instragram. However, a post could be from an anonymous person about a story as a general knowlegde or some activities that we barely see on the daily news, so others can hear about it. We hope from this project we could learn more not only just learning scheme, but also how to use different libraries already within the scheme language. Morever, we hope to create something for public uses as well. 
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
@@ -28,9 +28,13 @@ Will it run on some data, like batch mode? Will you present some analytical resu
 
 Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
+At the end of the project, we expect to successfully implement all encoded functions in racket. Firstly, we have to make sure the creating blog function works accurately then be sure to store it into the database, then the updating posted blog function. Adding/Updating/Removing comment funciton will be afterward. Secondly, we will implement the upload photos/videos and share videos by URL function and be sure it implements the way they suppose to be. Lastly and the most important part of this software will be the implementation of the database. It is so important becuase all posted blogs will be stored in the database. Interactively, we think this software should be successfully executed for all operating system as long as it is capatible with the Dr.racket program, and we will test that part at the end of the project before the final presentation.
+
 ### Evaluation of Results
 How will you know if you are successful? 
 If you include some kind of _quantitative analysis,_ that would be good.
+
+This project will be completely successful when we implement all required functoins correctly, and it passes testing processes.
 
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
@@ -55,7 +59,7 @@ Our first milestone will be User Interface, Creaeting/Updating a blog, and Addin
 Our second milestone will be Uploading Photos/Videos, and Sharing videos by URL
 
 ### Final Presentation (last week of semester)
-Implementing the database. 
+Before final presentation, Implementing the database, testing the project. 
 
 ## Group Responsibilities
 Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
