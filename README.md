@@ -94,15 +94,15 @@ In the headings below, replace the silly names and GitHub handles with your actu
 
 ### Muhammed Khalid @mkhalid578 (Team Lead) 
 will write the....
-Function responsible for allowing users to upload pictures
-Function responsible for allowing users to share links
-Construct a graphical user interface
-Work on a database
+* Function responsible for allowing users to upload pictures
+* Function responsible for allowing users to share links
+* Construct a graphical user interface
+* Work on a database
 
 ### Chhun Kim @chhunkim
 will work on...
-Function to allow users to update a blog which they have alread posted
-Function that will allow users to upload and/or embed videos to the blog
-Construct a graphical user interface
-Work on a database
+* Function to allow users to update a blog which they have alread posted
+* Function that will allow users to upload and/or embed videos to the blog
+* Construct a graphical user interface
+* Work on a database
 
