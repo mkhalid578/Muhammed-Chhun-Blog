@@ -49,13 +49,13 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-What exactly will be turned in on this day? 
+Our first milestone will be User Interface, Creaeting/Updating a blog, and Adding/Updating/Removing comments. 
 
 ### Second Milestone (Fri Apr 22)
-What exactly will be turned in on this day? 
+Our second milestone will be Uploading Photos/Videos, and Sharing videos by URL
 
 ### Final Presentation (last week of semester)
-What additionally will be done in the last chunk of time?
+Implementing the database. 
 
 ## Group Responsibilities
 Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
