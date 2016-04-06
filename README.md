@@ -2,11 +2,8 @@
 # Project Title: Interactive OPL Blog Page
 
 ### Statement
-Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
 
-This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other site by copying URL in the box. The blog, photos, and videos posted will be on the webpage. We are currently trying to figure out a way to store 
-the information onto the website and wrtie them into Database.
-a database.
+This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other sites by copying URL of the site. All blogs, photos, and videos posted will be stored on the webpage's database. Personally, we think that this project is interested because we could post daily activities as a dairy, and we think that a social media is not supposed to be just personal information and having friends added each other like Facebook or Instragram. However, a post could be from an anonymous person about a story as a general knowlegde or some activities that we barely see on the daily news, so the world sould take a consideration about it. We hope from this project we could learn more not only just learning scheme, but also how to use different libraries already existed in scheme language. Morever, we hope to create something for public uses as well. 
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
