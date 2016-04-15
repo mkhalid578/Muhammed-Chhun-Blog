@@ -5,48 +5,37 @@
 
 This project allows users to post thier daily blog which allows other users to make comments and share thier thoughts on the blog. Users can upload thier photos as well as share vidoes they like from youtube or any other sites by copying URL of the site. All blogs, photos, and videos posted will be stored on a database provided if we have enough time. Personally, we think that this project is interesting because we could post daily activities as a dairy, and we think that a social media is not supposed to be just personal information and having friends added each other like Facebook or Instragram. However, a post could be from an anonymous person about a story as a general knowlegde or some activities that we barely see on the daily news, so others can hear about it. We hope from this project we could learn more not only just learning scheme, but also how to use different libraries already within the scheme language. Morever, we hope to create something for public uses as well. 
 
-### Analysis
-Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
+### Milestone 1
 
-The approaches that we will bring from class is a little bit of recursion. Although recursion has been the main point
-in this class, our use of recursion is very limited. There will be some data abstraction as we will be working with potential data that will be uploaded to the webpage (i.e pictures, videos, blog posts). In terms of object oriented programming, we did create a BLOG object which represents a blog post. So in a sense, you can consider this object-oriented programming. A huge part of this project will rely heavily on state modification approaches. We want to give people the ability to "modify" posts. About 60-70% of our project, again, is going to be influenced by state modifications. 
+# What Have We Done So Far? 
 
-### Data set or other source materials
-If you will be working with existing data, where will you get those data from? (Dowload it from a website? access it in a database? create it in a simulation you will build....)
+# @mkhalid578
+* I created the blog object which is also mutable: 
+```racket
+(struct blog (posts) #:mutable)
+(struct post (title body comments) #:mutable)
+``` 
+* I also created two saved fictictious blogs which have no meaning but these are the blog posts that will appear at startup
 
-We plan to create a local database that will be saved on our machine. Chhun and I hope to have a local database stored 
-on machines and play around with that IF God wills. This fictional database will hopefully store any posts and comments made to the website. Currently, we have it such that when upload a blog, a post, and a comment it will only store it as long as the website is running. As soon as we kill it, it does not save anything. 
+```racket 
+(define BLOG
+  (blog
+   (list (post "Batman V. Superman"
+               "This film was just terrible and it could have been better if Zack Synder knew how to direct a
+                 better movie. Morever he should use more practical effects"
+               (list))
+         (post "Captain America: Civil War"
+               "This film is going to be awesome. I look forward to watching this movie right after I finish my OPL Final Exam!"
+               (list "First!")))))
+```
+Professor Martin suggest that we start with the hardest thing first and that is what Chhun has started 
+Chhun is currently working on the GUI individually for the project. As we move forward, the responsbilities have 
+slightly changed. I have essentially created a blog which can now have a title, a body, and the ability to add comments 
+to these blogs. Moreover, I also am going to include a comment counter which display the number of comments on a 
+particular blog. 
 
-Do your homework here: if you are pulling data from somewhere, actually go download it and look at it. Explain in some detail what your plan is for accomplishing the necessary processing.
+# @chhunkim 
 
-A lot of what we have so far is code. We have been heavily influenced by the racket libraries and the documentation. I cannot stress how helpful the documentation is. It has played a vital role in helping us with creating the website. And Jay McCarthy is so helpful whenever I had any questions. 
-
-### Deliverable and Demonstration
-Explain exactly what you'll have at the end. What will it be able to do at the live demo?
-
-We want to be able to show at least that we have localhosted website, that will allow posts to be uploaded, comments can be made to the uploaded posts, and users to upload pictures within their blog posts. 
-
-What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
-
-Well a piece of software. It will be a web page that will behave as a blogspot. It will allow random people to upload 
-random posts. Then people should be able to comment on those posts. Also include some error checking to make sure if a user wanted to add or not add the comment he or she wishes to add. 
-
-Will it run on some data, like batch mode? Will you present some analytical results of the processing? How can it be re-run on different source data?
-
-We are hoping to have the data that is uploaded to the site to be store into a database. This is something we are still trying to wrap our minds around and are hoping is possible to accomplish in the time that we have. 
-
-Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
-
-At the end of the project, we expect to successfully implement all encoded functions in racket. Firstly, we have to make sure the creating blog function works accurately then be sure to store it into the database, then the updating posted blog function. Adding/Updating/Removing comment funciton will be afterward. Secondly, we will implement the upload photos/videos and share videos by URL function and be sure it is implemented correctly. Lastly and the most important part of this software, will be the implementation of the database. It is so important because all posted blogs will be stored in the database. Interactively, we think this software should be successfully executed for all operating system as long as it is capatible with the Dr.racket program, and we will test that part at the end of the project before the final presentation if we have time.
-
-### Evaluation of Results
-How will you know if you are successful? 
-If you include some kind of _quantitative analysis,_ that would be good.
-
-This project will be completely successful when we implement all required functoins correctly, and it passes testing processes.
-
-## Architecture Diagram
-Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
 
 * The diagram is: 
 ![alt tag](https://github.com/oplS16projects/Muhammed-Chhun-Blog/blob/master/fp_diagram.png)
@@ -73,10 +62,10 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-Our first milestone will be User Interface, Creating/Updating a blog, and Adding/Updating/Removing comments. 
+Our first milestone will be User Interface, Creating/Updating a blog, and Adding comments. 
 
 ### Second Milestone (Fri Apr 22)
-Our second milestone will be Uploading Photos/Videos, and Sharing videos by URL
+Our second milestone will be creating a RacketUI (Chhun Kim), Uploading Photos/Videos (Muhammed Khalid, and Sharing videos by URL (Muhammed Khalid)
 
 ### Final Presentation (last week of semester)
 Before final presentation, Implementing the database, testing the project if we can accomplish it. 
@@ -95,14 +84,20 @@ In the headings below, replace the silly names and GitHub handles with your actu
 ### Muhammed Khalid @mkhalid578 (Team Lead) 
 will write the....
 * Function responsible for allowing users to upload pictures
-* Function responsible for allowing users to share links
-* Construct a graphical user interface
-* Work on a database
+* Function responsible for adding blogs
+* Adding comments to blogs
+
 
 ### Chhun Kim @chhunkim
 will work on...
 * Function to allow users to update a blog which they have alread posted
 * Function that will allow users to upload and/or embed videos to the blog
 * Construct a graphical user interface
-* Work on a database
+
+### Together 
+
+will work on...
+* Database if time allows. 
+
+
 
