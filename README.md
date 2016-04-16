@@ -36,6 +36,38 @@ particular blog.
 
 # @chhunkim 
 
+So I am working on the GUI of the project or the Graphical User Interface. Me and Muhammed, if we have time at the end, plan to work on the database which will store all of our blogs and their information. 
+
+I first created a HTML page which will create the interface for the website. This is what will be seen by the user when we first run the application. 
+```racket
+(define (render-blog-page request)
+  (define (response-generator embed/url)
+    (response/xexpr
+     `(html (head (title "MC Crew Blog"))
+            (body
+             (h1 "OPL Interactive Blog Page")
+             ,(render-posts embed/url)
+             (form ((action
+                     ,(embed/url insert-post-handler)))
+                   (input ((name "title")))
+                   (input ((name "body")))
+                   (input ((type "submit"))))))))
+  ```
+  The code above will pretty much create a HTML website. The tab will be named MC Crew Blog and the head of the website will say "OPL Interactive Blog Page." 
+  
+  I also added a handler which I got from reading the provided documentation: 
+  
+  ```racket
+   ,(embed/url insert-post-handler)))
+                   (input ((name "title")))
+                   (input ((name "body")))
+                   (input ((type "submit"))))))))
+  ```
+  This is where the user will add the title of the blog, then the body of the blog, and then hit submit to enter into the 
+  data strucutre. 
+  
+  Muhammed and I met up in the lab today and combined what we have done seperately into one file. 
+
 
 * The diagram is: 
 ![alt tag](https://github.com/oplS16projects/Muhammed-Chhun-Blog/blob/master/fp_diagram.png)
