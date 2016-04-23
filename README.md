@@ -127,38 +127,25 @@ li {
 ```
 # @chhunkim 
 
-So I am working on the GUI of the project or the Graphical User Interface. Me and Muhammed, if we have time at the end, plan to work on the database which will store all of our blogs and their information. 
-
-I first created a HTML page which will create the interface for the website. This is what will be seen by the user when we first run the application. 
+  I've implemented the database that will store all previous posts so that others can read and share thier opinions by replying
+  comments, and they are also will be stored in the same database file.
 ```racket
-(define (render-blog-page request)
-  (define (response-generator embed/url)
-    (response/xexpr
-     `(html (head (title "MC Crew Blog"))
-            (body
-             (h1 "OPL Interactive Blog Page")
-             ,(render-posts embed/url)
-             (form ((action
-                     ,(embed/url insert-post-handler)))
-                   (input ((name "title")))
-                   (input ((name "body")))
-                   (input ((type "submit"))))))))
-  ```
-  The code above will pretty much create a HTML website. The tab will be named MC Crew Blog and the head of the website will say "OPL Interactive Blog Page." 
-  
-  I also added a handler which I got from reading the provided documentation: 
-  
-  ```racket
-   ,(embed/url insert-post-handler)))
-                   (input ((name "title")))
-                   (input ((name "body")))
-                   (input ((type "submit"))))))))
-  ```
-  This is where the user will add the title of the blog, then the body of the blog, and then hit submit to enter into the 
-  data strucutre. 
+
+(define (start request)
+  (render-blog-page
+   (initialize-blog!
+    (build-path (current-directory)
+                "the-blog-data.db")) request))
+   
+```
+ With this short piece of code, the database would store posted information in "the-blog-data.db" file. Every time we start our 
+ webpage, we will see the previous posts. 
+ 
+ So far we've done almost 80% of this project. We've done a new blog creating, photos uploading, and adding, replying, and removing
+ comment. At this point, I've done the database part. It is the most important piece of this project because we want to store every
+ posted story stored in databsae so that others can see them when we reload the blog. Moreover, people could read the old posts 
   
   Muhammed and I met up in the lab today and combined what we have done seperately into one file. 
-
 
 * The diagram is: 
 ![alt tag](https://github.com/oplS16projects/Muhammed-Chhun-Blog/blob/master/fp_diagram.png)
@@ -169,7 +156,8 @@ will write the....
 * Create HTML Overlay in addition to GUI
 
 ### Chhun Kim @chhunkim
-will work on...
+will write the...
+* Database
 
 
 
