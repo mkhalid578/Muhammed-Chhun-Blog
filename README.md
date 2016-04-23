@@ -144,10 +144,6 @@ li {
   
   Muhammed and I met up in the lab today and combined what we have done seperately into one file. 
 
-* The diagram is: 
-![alt tag](https://github.com/oplS16projects/Muhammed-Chhun-Blog/blob/master/fp_diagram.png)
-
-
 ### Muhammed Khalid @mkhalid578 (Team Lead) 
 will write the....
 * Create HTML Overlay in addition to GUI
