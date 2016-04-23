@@ -138,12 +138,9 @@ li {
                 "the-blog-data.db")) request))
    
 ```
- With this short piece of code, the database would store posted information in "the-blog-data.db" file. Every time we start our 
- webpage, we will see the previous posts. 
- 
- So far we've done almost 80% of this project. We've done a new blog creating, photos uploading, and adding, replying, and removing
- comment. At this point, I've done the database part. It is the most important piece of this project because we want to store every
- posted story stored in databsae so that others can see them when we reload the blog. Moreover, people could read the old posts 
+ With this short piece of code, the database would store all posted information in "the-blog-data.db" file. Every time we start our
+ webpage, it will load the previous posts.  At this point, I've done the database part. It is the most important piece of this 
+ project because we want to store every posted story in a database so that others can see them when we reload the blog. 
   
   Muhammed and I met up in the lab today and combined what we have done seperately into one file. 
 
