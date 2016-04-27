@@ -51,7 +51,7 @@ Remember code looks something like this:
                                               (li () (a ((href "webpages/about.html")) "About Us"))))
 ```
 This is more of an list of lists, but I find this to be my favorite peace of code. It also shows how creating HTML 
-code in Racket slightly more convenient as I do not have to include closing tags (i.e <h2> </h2>) rather I can just close it with parentheses thanks to Dr. Jay McCarthy. 
+code in Racket slightly more convenient as I do not have to include closing tags, rather I can just close it with parentheses thanks to Dr. Jay McCarthy. 
 ####Lillian (another team member)
 This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
 ```scheme
