@@ -1,158 +1,74 @@
-# Muhammed-Chhun-Blog
-# Project Title: Interactive OPL Web Page
+# OPL Webpage
 
-### Statement
+##Authors
+### Muhammed Khalid
+### @mkhalid578
 
-Our original plans were to create a blog page with a GUI and backend database if time would allow. After speaking with 
-Jay McCarthy, a Professor at UMass Lowell, he simply told us that it is not yet possible to use the GUI Library alongisde
-the HTML compiler. So we had to scrap the GUI Library off of our bucket list and try to come up with something that would
-still allow us to accomplish our goals. As a result of this unexpected news, there has been a switch in command. I will 
-now focus entirely on the front end while Chhun will be focusing on creating a database to help store our blog data. 
-In addition to that, Chhun will also be creating some other webpages to give the website more life. I have currently 
-created a CSS file that is being utilized from the CS server through my public website, courtesy of the school. 
+Person Two
+#### Chhun Kim 
+#### @chhunkim
 
-### Milestone 2
+##Overview
+A webpage that allows users to look at blog posts and create their own blog posts. Moreover, the users also 
+have the ability to comment on other blog posts on the website and the blogs are posted in real-time.
 
-# What Have We Done So Far? 
+##Screenshot
+(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
 
-# @mkhalid578
-* I created the blog object which is also mutable: 
-```racket
-(struct blog (posts) #:mutable)
-(struct post (title body comments) #:mutable)
-``` 
-* I've created HTML webpages that will be visible to students 
+Here's a demonstration of how to display an image that's uploaded to this repo:
+![screenshot showing env diagram](withdraw.png)
 
-```racket 
-(define (render-blog-page a-blog request)
-  (local [(define (response-generator make-url)
-            (response/xexpr
-             `(html (head (title "A Blog..."))
-                    (link ([rel "stylesheet"] [href "http://www.cs.uml.edu/~mkhalid/stylesheet.css"] [type "text/css"]))
-                    (body
-                     (img ([src "lambda_man.jpg"]))
-                     (h2 "My Blog")
-                     ,(render-posts a-blog make-url)
-                     (form ((action
-                             ,(make-url insert-post-handler)))
-                           (input ((name "title")))
-                           (input ((name "body")))
-                           (input ((type "submit"))))))))
- 
+##Concepts Demonstrated
+Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
+* **Message Dispatch** is used when blogs and posts are sent from one function to another. 
+* **Set Modification** had a small application in creating the "blog" object for storing blog title and post
+* **Cons and Lists* are used when creating "html" tags. (i.e '(html (head (body (section))))). 
+
+##External Technology and Libraries
+Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
+## #lang racket/base
+(require xml)
+* This was probably the most important library. It emulated a HTML parser which allowed me to input HTML code and it would 
+output how to input that same HTML code in Racket/Scheme/Clojure. 
+## #lang web-server/insta
+* This lang and library was just as important as this allowed me to create the web server which was hosted from my local machine. 
+* With the help of those libraries, it almost felt as if I was programming in pure HTML through a Racket Interface.
+
+
+##Favorite Scheme Expressions
+#### Muhammed (@mkhalid578)
+Each team member should identify a favorite expression or procedure, written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
+Remember code looks something like this:
+```scheme
+(html (head (title "A Blog..."))
+                    (link ([rel "stylesheet"] [href "css/stylesheet.css"] [type "text/css"]))
+                    (body ((id "body"))
+                     ;;(h2 ((id "header"))(a ((href "webpages/index.html")) "My Blog"))
+                     ;;(h2 ((id "gallery")) (a ((href "webpages/gallery.html")) "Our Gallery"))
+                     (div ((id "navbar")) (ul ((id "ul_navbar")) (li () (a ((href "standalone.rkt")) "Home"))
+                                              (li () (a ((href "webpages/gallery.html")) "OPL Gallery"))
+                                              (li () (a ((href "contact.html")) "Contact"))
+                                              (li () (a ((href "webpages/about.html")) "About Us"))))
 ```
-This a webpage overlay within Racket. A typical HTML website consists of: 
-```html
-<html>
-  <head>
-    <link rel = "stylesheet" href = "www.whatever.domain" type = "text/css"> </link>
-  </head>
-    <body>
-      <h1> Stuff </h1>
-      <h2> More Stuff </h2>
-    </body>
-</html>
+This is more of an list of lists, but I find this to be my favorite peace of code. It also shows how creating HTML 
+code in Racket slightly more convenient as I do not have to include closing tags (i.e <h2> </h2>) rather I can just close it with parentheses thanks to Dr. Jay McCarthy. 
+####Lillian (another team member)
+This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
+```scheme
+(let* ((expr (convert-to-regexp (read-line my-in-port)))
+             (matches (flatten
+                       (hash-map *words*
+                                 (lambda (key value)
+                                   (if (regexp-match expr key) key '()))))))
+  matches)
 ```
-Racket emulates this by using a huge list with cells which represent the individual parts. Since, we do not eat to 
-access the data there we do not to use cell accessors such car or cdr. 
 
-The similarities between actual HTML and Racket are as follows: 
+##Additional Remarks
+There are 45 operators in the C Language, and 13 of those operators have a side-effect. 
 
-In HTML if want to delineate a tag we would simply do as it is illusrated below: 
+#How to Download and Run
+To download this lovely piece of code: 
+1. Go on our github repository (www.github.com/oplS16projects/Muhammed-Chhun-Blog/)
+2. 
 
-```html 
-<h1> This is a header tag </h1>
-<a href = "www.cs.uml.edu/~fredm"> Fred Martin </a>
-```
-Similarly in Racket we would do as follows: 
-
-```racket
-(h1 "This is a header tag")
-(a ((href "www.cs.uml.edu/~fredm")) Fred Martin)
-```
-I also spent a some time with Dr. Jay McCarthy so he could help me understand what I was doing exactly. During 
-his office hours I learned that you can also link a CSS file within racket which would do the styling to your HTML 
-for you by doing as follows: 
-
-```racket 
-(link ([rel "stylesheet"][href "/stylesheet.css"][type "text/css"]))
-```
-This allowed to me link a CSS file to style my HTML code which I did as mentioned below: 
-
-```css
-#p_about {
-  padding-top: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-family: Courier;
-  font-size: 16px;
-}
-p {
-  font-family: Courier;
-  font-size: 16px;
-}
-h2 {
-	font-family: Verdana;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	color: #acd1b2;
-}
-span {
-  color: #cc0000;
-  font-size: 24px;
-}
-#navbar {
-  position:fixed;
-  top:10px;
-  left:50%;
-  margin-left: -254px;
-}
-#header {
-  position: relative;
-  top: 40px;
-  background-color: #3c4543;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-li {
-	display: inline;
-	border: 2px solid #000000;
-	font-family: Futura, Tahoma, sans-serif;
-	color: #ffffff;
-	padding: 5px;
-	border-radius: 5px 5px;
-	background-color: #cc9323
-}
-```
-# @chhunkim 
-
-  I've implemented the database that will store all previous posts so that others can read and share thier opinions by replying
-  comments, and they are also will be stored in the same database file.
-```racket
-
-(define (start request)
-  (render-blog-page
-   (initialize-blog!
-    (build-path (current-directory)
-                "the-blog-data.db")) request))
-   
-```
- With this short piece of code, the database would store all posted information in "the-blog-data.db" file. Every time we start our
- webpage, it will load the previous posts.  At this point, I've done the database part. It is the most important piece of this 
- project because we want to store every posted story in a database so that others can see them when we reload the blog. 
-  
-  Muhammed and I met up in the lab today and combined what we have done seperately into one file. 
-
-### Muhammed Khalid @mkhalid578 (Team Lead) 
-will write the....
-* Create HTML Overlay in addition to GUI
-
-### Chhun Kim @chhunkim
-will write the...
-* Database
-
-
-
-
-
+Include what file to run, what to do with that file, how to interact with the app when its running, etc. 
