@@ -34,7 +34,7 @@ output how to input that same HTML code in Racket/Scheme/Clojure.
 * This lang and library was just as important as this allowed me to create the web server which was hosted from my local machine. 
 
 ## (require xml)
-* With the help of those libraries, it almost felt as if I was programming in pure HTML through a Racket Interface.
+* With the help of those libraries, it almost felt as if I was programming in pure HTML through a Racket Interface. This was suggested by Dr. Jay McCarthy as this is a useful tool for parsing throught HTML code and create similar code in racket. 
 
 
 ##Favorite Scheme Expressions
