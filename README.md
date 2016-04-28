@@ -27,10 +27,10 @@ Identify the OPL concepts demonstrated in your project. Be brief. A simple list 
 ##External Technology and Libraries
 Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
 ## #lang racket/base
-(require xml)
 * This was probably the most important library. It emulated a HTML parser which allowed me to input HTML code and it would 
 output how to input that same HTML code in Racket/Scheme/Clojure. 
 ## #lang web-server/insta
+## (require xml)
 * This lang and library was just as important as this allowed me to create the web server which was hosted from my local machine. 
 * With the help of those libraries, it almost felt as if I was programming in pure HTML through a Racket Interface.
 
