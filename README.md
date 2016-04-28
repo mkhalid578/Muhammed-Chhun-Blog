@@ -68,9 +68,18 @@ This expression reads in a regular expression and elegantly matches it against a
 ##Additional Remarks
 There are 45 operators in the C Language, and 13 of those operators have a side-effect. 
 
-#How to Download and Run
-To download this lovely piece of code: 
-1. Go on our github repository (www.github.com/oplS16projects/Muhammed-Chhun-Blog/)
-2. 
+# How to Download and Run
+## To download this lovely piece of code: 
+* Go on our github repository (www.github.com/oplS16projects/Muhammed-Chhun-Blog/)
+* Download all the files within the repository to your local machine
+* on a Mac, on Finder go to "Go To Folder"
+* Type this is in: /Applications/Racket v6.4/share/pkgs/web-server-lib/web-server/default-web-root/htdocs/
+* Go into the servlet folder
+* Copy the css, dist, images, src, and webpages folders into that directory
+* Copy the test.rkt, model.rkt, and Gruntfile.js also into the same directory. 
+* Now that we have the necessary files, we can open up the test.rkt file 
+* Hit Run at the top right, and HTML webpage should pop up into a browser 
+* You will not be created wit the website and blog as freely as you would like. 
+
 
 Include what file to run, what to do with that file, how to interact with the app when its running, etc. 
