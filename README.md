@@ -22,7 +22,7 @@ Here's a demonstration of how to display an image that's uploaded to this repo:
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
 * **Message Dispatch** is used when blogs and posts are sent from one function to another. 
 * **Set Modification** had a small application in creating the "blog" object for storing blog title and post
-* **Cons and Lists* are used when creating "html" tags. (i.e '(html (head (body (section))))). 
+* **Cons and Lists** are used when creating "html" tags. (i.e '(html (head (body (section))))). 
 
 ##External Technology and Libraries
 Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
