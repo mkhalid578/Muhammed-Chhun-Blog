@@ -1,0 +1,296 @@
+#p_about {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Courier;
+  font-size: 16px;
+}
+p {
+  font-family: Courier;
+  font-size: 16px;
+}
+#about_p {
+  font-family: Courier;
+  font-size: 16px;
+  background-color: black;
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  background: rgba(255, 255, 255, .5);
+}
+#p {
+   font-family: Courier;
+   font-size: 16px;
+   text-align: center;
+}
+#post_p {
+  padding-top: 15px;
+  font-family: Courier;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 25px;
+  width: 400px;
+  margin: 0 auto;
+  background-color:black;
+  background: rgba(255, 255, 255, .5);
+}
+
+/* the "My blog" button */
+h2 {
+	font-family: Courier;
+	font-weight: bold;
+	/*padding-bottom: 25px;*/
+  text-align: center;
+	color: #ffffff;
+  padding-bottom: 20px;
+  margin: 0;
+	/*width: auto;
+	max-width: 400px;
+	margin: 0 auto;*/
+}
+h1 {
+  font-family: Verdana;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+span {
+  color: #cc0000;
+  font-size: 24px;
+}
+
+/* HOME Button */
+#navbar {
+  position:fixed;
+  top:10px;
+  margin: 0;
+}
+#header {
+  top: 8px;
+  text-align: left;
+  position: absolute;
+  width: auto;
+}
+
+ .li {
+  display: inline;
+  border: 2px solid #000000;
+  font-family: Futura, Tahoma, sans-serif;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px 5px;
+  background-color: #cc9323
+}
+#post{
+  background-color: black;
+}
+ul{
+	list-style-type: none;
+	position: fixed;
+	margin: -1px;
+  margin-left: 20px;
+}
+li a {
+  display: block;
+  color: #000;
+  width: 135px;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+
+}
+
+li {
+  list-style-type: none;
+  padding-top: 15px;
+
+}
+
+#comment_li {
+  list-style-type: none;
+  padding-top: 15px;
+}
+#ul_navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  font-family: Courier;
+  background-color: black;
+  background: rgba(255, 255, 255, .5);
+}
+p1 {
+  font-family: Times;
+  font-size: 18px;
+}
+
+#redobject {
+  background-color: #cc0000;
+  height: 100px;
+  width: 100px;
+}
+#td {
+  height: 50px;
+  border: 1px dashed blue;
+  border: 1px solid black;
+}
+
+/*img {
+  border: 1px solid #4682b4;
+  height: auto;
+  width: auto;
+  position: fixed;
+  right: center;
+  bottom: 30px;
+  left:300px;
+  max-height: 300px;
+  max-width: 300px;
+  object-size: contain;
+} */
+
+/*#fred {
+
+  border: 1px solid #4682b4;
+  height: auto;
+  width: auto;
+  position: fixed;
+  right: center;
+  bottom: 30px;
+  left:300px;
+  max-height: 300px;
+  max-width: 300px;
+  object-size: contain;
+
+} */
+
+/* where chhun edited
+/* Creating a Button */
+#button {
+  height:50px;
+  width:120px;
+  background-color: #BCD2EE;
+  border-style: 2px black solid;
+  border-color: #BCD2EE;
+  border-radius: 5px;
+  margin:auto;
+  text-align: left;
+}
+.fancy {
+  font-family: cursive;
+  color: #0000CD;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  -moz-box-shadow: 0 0 50px #ccc;
+  -webkit-box-shadow: 0 0 50px #ccc;
+  box-shadow: 0 0 50px #ccc;
+  background-color: #555;
+  color: white;
+
+}
+#h3 {
+    adding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Courier;
+  font-size: 16px;
+}
+
+.posts {
+	text-align: left;
+	padding-bottom: 40px;
+	width: auto;
+	max-width: 400px;
+	margin: 0 auto;
+}
+.post {
+	text-align: center;
+  background-color: black;
+  background: rgba(255, 255, 255, .5);
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.main {
+  padding-top: 40px;
+  padding-left: 15px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.post_return {
+  position:relative;
+  width: 135px;
+  margin: 0 auto;
+}
+.post_return a {
+  display: block;
+  color: #000;
+  width: 135px;
+  padding: 8px 0 8px 16px;
+  background: rgba(255, 255, 255, .5);
+  text-decoration: none;
+}
+.post_return a:hover {
+  background-color: #555;
+  color: white;
+}
+.form {
+	text-align: center;
+  padding-top: 100px;
+}
+.emph {
+	font-family: Courier;
+	font-size: 20px;
+	background-color: #acd1b2;
+}
+#body {
+  background-color: #c0c0c0;
+   background-image: url("../images/background.jpeg");
+}
+#gallery {
+  margin: 0;
+  text-align: center;
+  padding-right: 1200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+section {
+  padding-top: 100px;
+
+}
+#a_return {
+  text-align: center;
+}
