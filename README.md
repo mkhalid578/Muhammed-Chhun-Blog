@@ -13,10 +13,10 @@ A webpage that allows users to look at blog posts and create their own blog post
 have the ability to comment on other blog posts on the website and the blogs are posted in real-time.
 
 ##Screenshot
-(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
-
-Here's a demonstration of how to display an image that's uploaded to this repo:
-![screenshot showing env diagram](withdraw.png)
+### The Main Webpage 
+![screenshot showing the main page](screenshot1.png)
+### The Comment Page 
+![screenshot showing the comment page](screenshot3.png)
 
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
