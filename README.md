@@ -72,6 +72,7 @@ the blog or comments will not be stored on the webpage. It is powerful, but shor
 
 ##Additional Remarks
 There are 45 operators in the C Language, and 13 of those operators have a side-effect. 
+We also used stylesheet.css and js files with HTML files created through Racket
 
 
 # How to Download and Run
