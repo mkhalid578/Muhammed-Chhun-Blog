@@ -54,19 +54,24 @@ Remember code looks something like this:
 ```
 This is more of an list of lists, but I find this to be my favorite peace of code. It also shows how creating HTML 
 code in Racket slightly more convenient as I do not have to include closing tags, rather I can just close it with parentheses thanks to Dr. Jay McCarthy. 
-####Lillian (another team member)
-This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
+
+####Chhun Kim (@chhunkim)
 ```scheme
-(let* ((expr (convert-to-regexp (read-line my-in-port)))
-             (matches (flatten
-                       (hash-map *words*
-                                 (lambda (key value)
-                                   (if (regexp-match expr key) key '()))))))
-  matches)
+(define (save-blog! a-blog)
+  (local [(define (write-to-blog)
+            (write a-blog))]
+    (with-output-to-file (blog-home a-blog)
+      write-to-blog
+      #:exists 'replace)))
+ 
 ```
+This acts as one of the main parts for creating a local database on the machine. It is also my 
+favorite because it took forever to write but it is so worth it. Without this chunks of code, I believe
+the blog or comments will not be stored on the webpage. It is powerful, but short and elegant.
 
 ##Additional Remarks
 There are 45 operators in the C Language, and 13 of those operators have a side-effect. 
+
 
 # How to Download and Run
 ## To download this lovely piece of code: 
