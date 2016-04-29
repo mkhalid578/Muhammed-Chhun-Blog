@@ -5,8 +5,8 @@
 ### @mkhalid578
 
 Person Two
-#### Chhun Kim 
-#### @chhunkim
+### Chhun Kim 
+### @chhunkim
 
 ##Overview
 A webpage that allows users to look at blog posts and create their own blog posts. Moreover, the users also 
